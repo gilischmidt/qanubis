@@ -1,16 +1,9 @@
 # QAnubis
 ------------
 
-An open-source web qualitative analysis tool to support coding on PDF files.
+An open-source web qualitative analysis software to support coding on PDF files.
 
 Build with Laravel.
-
-## About Branches
-
-This repository is structure in the following way:
-
-1. **master** - the main branch that contains a working project version (at least it should hehe);
-2. **development** - as the name says, it is a WIP not stable code version;
 
 ## Deployment
 
