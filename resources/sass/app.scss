@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&family=Roboto&family=Roboto+Condensed&display=swap');
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Libs
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+@import "~spectrum-colorpicker2/dist/spectrum.min.css";
+@import "~select2/dist/css/select2.min.css";
+@import "~@toast-ui/chart/dist/toastui-chart.min.css";
+@import "~@staaky/tipped/dist/css/tipped.css";
+
+@import "~summernote/dist/summernote.min.css";
+@import "~summernote/dist/summernote-bs4.min.css";
+
+@import "jstree/dist/themes/default/style.min.css";
+@import "~d3-context-menu/css/d3-context-menu.css";
+
+// Layout
+@import "layout/app";
+@import "layout/auth";
+
+// Pages
+@import "pages/home";
+@import "pages/projects";

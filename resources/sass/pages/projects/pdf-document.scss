@@ -1,0 +1,12 @@
+.pdf-context-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+
+    & li {
+        padding: 0.5rem !important;
+        cursor: pointer;
+    }
+}
+
+

@@ -1,0 +1,93 @@
+.auth-page {
+    // CONTENT
+    .auth-card {
+        border-radius: 10px;
+        max-width: 500px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .auth-card .card-body > div {
+        padding-bottom: 25px;
+    }
+
+    .btn-facebook {
+        color: white;
+        background-color: #4267B2;
+    }
+
+    .btn-google {
+        color: white;
+        background-color: #EF4433;
+    }
+
+    .subtitle {
+        overflow: hidden;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .subtitle:before,
+    .subtitle:after {
+        background-color: #000;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .subtitle:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    .subtitle:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+    .continue-button {
+        width: 90%;
+    }
+
+    img.logo {
+        height: 100px
+    }
+
+    // BACKGROUND
+    #bg {
+        background-image: linear-gradient(to bottom right, #CCE4FF, #1F1F70);
+        background-size: cover;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -99;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        -webkit-transition: 1s opacity;
+        transition: 1s opacity;
+        opacity: 0.90;
+    }
+
+    #bg-img {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background-size: cover;
+        -webkit-transition: 1s opacity;
+        transition: 1s opacity;
+    }
+}

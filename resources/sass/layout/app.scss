@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', 'Nunito', sans-serif;
+}
+
+label {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: 'Pragati Narrow', sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.btn {
+    text-transform: none;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#footer-app {
+    width: 100%;
+    color: white;
+    height: 40px;
+    max-height: 40px;
+
+    & .icons-info {
+        margin-right: 10px;
+        padding-right: 5px;
+        border-right: 1px solid white;
+
+        & a {
+            color: $text-muted;
+        }
+    }
+}
+
+#header .locale-icon {
+    height: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    #header .dropdown-locales-container {
+        border-left: 1px solid #DFDFDF;
+    }
+
+    #header .dropdown-locales {
+        width: 200px;
+    }
+}
+
+
+.page-title-container {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $text-muted;
+    padding-bottom: 5px;
+
+    & .page-title {
+        margin: 0px;
+        font-size: 1.75em;
+        font-weight: 600;
+        color: $primary;
+    }
+
+    & .page-title-buttons {
+        margin-left: auto;
+    }
+}
+
+.nav-link {
+    color: $primary;
+}
+
+table.expand-first-column {
+    & td:not(:first-child) {
+        white-space: nowrap;
+    }
+
+    & td:first-child {
+        width: 100%;
+    }
+}
+
+.swal2-confirm {
+    color: white !important;
+    background-color: $primary !important;
+}
+
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+// quill
+.ql-editor {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.select2-selection--single {
+    height: 36px !important;
+    border: 1px solid #ced4da;
+
+    .select2-selection__arrow {
+        height: 32px !important;
+    }
+
+    .select2-selection__rendered {
+        line-height: 32px !important;
+    }
+}
+
+.jstree-default {
+    .jstree-wholerow-clicked {
+        background: #a8dadc;
+    }
+
+    .jstree-icon {
+        margin-top: 5px;
+        margin-right: 10px !important;
+        width: 20px !important;
+        height: 20px !important;
+        line-height: 20px !important;
+    }
+}
+
+.vakata-context li > a > svg {
+    text-decoration: none !important;
+    display: inline-block !important;
+    width: 1em !important;
+    height: 1em !important;
+    background: transparent;
+    margin: 9px 5px 0 -1.5em !important;
+    vertical-align: top !important;
+    text-align: center !important;
+    line-height: 2.4em !important;
+}

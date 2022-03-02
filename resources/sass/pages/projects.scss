@@ -1,0 +1,131 @@
+@import "projects/pdf-viewer";
+@import "projects/pdf-document";
+
+#modal-show-result, #modal-show-result-tag {
+    & .modal-dialog {
+        min-width: 95vw !important;
+    }
+}
+
+.document-form-modal-content, #document-form-modal {
+    & .list-group-item {
+        cursor: pointer;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+}
+
+.document-form-modal-content, #document-form-modal {
+    & .list-group-item:hover {
+        background-color: rgba(234, 158, 52, .15);
+    }
+}
+
+.project-page {
+    min-width: 1300px;
+
+    & .memo-show {
+        & .memo-description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+
+    & .document-option, .memo-option {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            //transform: scale(1.1);
+            border-color: $secondary !important;
+            border-width: 3px !important;
+            z-index: 99;
+        }
+
+        &.selected {
+            font-weight: 600;
+            border-left: 5px solid $secondary;
+        }
+    }
+
+    & hr {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & #main-content {
+        & #current-document {
+            overflow: hidden;
+            background: $gray-200;
+            border: 1px solid $border-color;
+        }
+    }
+
+    & .sidebar {
+        & .nav-link {
+            padding: 0.2em !important;
+        }
+    }
+
+    & .btn-select-document, .btn-select-memo {
+        cursor: pointer;
+    }
+
+
+    & .list-group-item.document-option, .list-group-item.tag-option {
+        padding-right: 0 !important;
+
+        & .dropdown-button:focus {
+            outline: 0 !important;
+            box-shadow: none !important;
+            color: $secondary;
+        }
+
+        & .dropdown-item:not(:last-child) {
+            border-bottom: 1px solid #DCDEDF;
+        }
+    }
+
+    & .tag-counter, .document-counter {
+        cursor: pointer;
+    }
+}
+
+.project-header {
+    min-width: 1300px;
+
+    & .vertical-divider {
+        border-left: 1px solid #38546d;
+        border-right: 1px solid #16222c;
+        height: 10px;
+    }
+
+    & .btn-select-page.active {
+        background-color: $secondary !important;
+        border-color: $secondary !important;
+    }
+}
+
+.project-subheader {
+    padding: 0.5rem 1rem;
+}
+
+#modal-tag-codings, #modal-document-codings {
+    & .btn-toggle-collapse, [data-toggle="collapse"] {
+        color: initial;
+    }
+
+    & .modal-dialog {
+        overflow-y: initial !important;
+        max-width: none;
+    }
+
+    & .modal-body {
+        max-height: 70vh !important;
+        overflow-y: auto;
+    }
+}
